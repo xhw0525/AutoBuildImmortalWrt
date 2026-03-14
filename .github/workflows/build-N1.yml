@@ -293,5 +293,6 @@ jobs:
           body_path: ${{ github.workspace }}/n1/info.md
           files: |
             ${{ env.PACKAGED_OUTPUTPATH }}/*.img.gz
+            ${{ env.PACKAGED_OUTPUTPATH }}/*rootfs.tar.gz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
